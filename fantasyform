@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Selecting a burger</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <form action="submission.html" method="POST">
+
+				<h1>Create a Hero for your journey!</h1>
+
+        <section class="character name">
+          <label for="patty">Pick a name for your character</label>
+    			<input type="text" name="name" id="character name">
+        </section>
+
+        <hr>
+
+        <section class="clan">
+          <label for="clan">Pick a clan for your character</label>
+    			<input type="text" name="clan" id="clan" list="clans">
+          <datalist id="clans">
+            <option value="human">Human</option>
+            <option value="elf">Elf</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="goblin">Goblin</option>
+          </datalist>
+        </section>
+
+        <hr>
+
+        <section class="age">
+          <label for="age">How old is your character?</label>
+          <input type="number" name="age" id="age" min="18" max="200">
+        </section>
+
+        <hr>
+
+        <section class="size">
+          <label for="character size">How large do you want to be?</label>
+          <br>
+          <span>Titch</span>
+          <input type="range" name="character size" id="character size" value="10" min="0" max="19" step="1">
+          <span>Giant</span>
+        </section>
+
+        <hr>
+
+        <section class="magic">
+          <span>Is your character magic?</span>
+          <br>
+          <label for "yes">Yes</label>
+          <input type="radio" id="Yes" name="magic" value="yes">
+          <label for "no">No</label>
+          <input type="radio" id="no" name="magic" value="no">
+        </section>
+
+        <hr>
+
+        <section class="abilities">
+          <span>What abilities would you like?</span>
+          <br>
+          <input type="checkbox" name="abilities" id="super strength" value="super strength">
+          <label for="super strength">Super Strength</label>
+          <br>
+          <input type="checkbox" name="abilities" id="super speed" value="super speed">
+          <label for="super speed">Super Speed</label>
+          <br>
+          <input type="checkbox" name="abilities" id="stealth" value="stealth">
+          <label for="stealth">Stealth</label>
+          <br>
+        </section>
+        <hr>
+
+        <section class="weapon">
+          <label for="weapon">What weapon would you like?</label>
+          <select name="weapon" id="weapon">
+            <option value="sword">Sword</option>
+            <option value="staff">Staff</option>
+            <option value="bow and arrow">Bow and arrow</option>
+          </select>
+        </section>
+        <hr>
+
+        <section class="motto">
+          <label for="motto">What is your motto?</label>
+          <br>
+          <textarea id="motto" name="motto" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Begin adventure">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
